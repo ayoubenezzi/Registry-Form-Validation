@@ -41,7 +41,7 @@ function validateZipCode() {
 }
 
 function validatePassword() {
-  const regExPassword = /^([a-zA-Z0-9]){10}$/;
+  const regExPassword = /^[a-zA-Z0-9!@#$%^&*]{6,16}$/;
 
   if (!regExPassword.test(password.value)) {
     notValid(password);
